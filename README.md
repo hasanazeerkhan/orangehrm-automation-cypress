@@ -62,11 +62,14 @@ The project follows a standard Cypress folder structure:
 ```
 orangehrm-automation-cypress/
 ├── cypress/
-│   ├── fixtures/        # Test data files
-│   ├── integration/     # Test specifications
-│   ├── support/         # Custom commands and global configurations
-├── cypress.json         # Cypress configuration file
-└── package.json         # Project dependencies and scripts
+│   ├── e2e/                    # Test data files
+|       ├── login.cy.js         # Spec file which contains test case
+│   ├── fixtures/               # Test specifications
+|       ├── testData.js.js      # File which contatins web elements and credentials
+│   ├── support/                # Custom commands and global configurations
+├── cypress.json                # Cypress configuration file
+└── package.json                # Project dependencies and scripts
+└── README.md                   # Documentation
 ```
 
 ## Custom Commands
