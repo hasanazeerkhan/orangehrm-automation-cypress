@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// Cypress.Commands.add('loginOrange', ()=>{
+//     cy.get(login.userName).type(credentials.userName);
+//     cy.get(login.password).type("bad password");
+//     cy.get(login.loginButton).click();
+// })
