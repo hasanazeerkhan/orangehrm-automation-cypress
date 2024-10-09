@@ -12,7 +12,6 @@ This repository contains automated tests for the OrangeHRM application using Cyp
 - [Custom Commands](#custom-commands)
 - [Test Cases Covered](#test-cases-covered)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
