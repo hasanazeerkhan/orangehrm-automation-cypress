@@ -27,7 +27,7 @@ const forgotPassword = {
 const credentials = {
     userName:'Admin',
     password: 'admin123',
-    accountName: 'Atharva  More'
+    accountName: 'manda user'
 }
 
 const leftPane = {

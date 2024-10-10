@@ -57,7 +57,7 @@ describe('Landing page tests', function(){
         })
 
     })
-    it('Search functionality in left pane', function(){
+    // it('Search functionality in left pane', function(){
 
-    })
+    // })
 })
