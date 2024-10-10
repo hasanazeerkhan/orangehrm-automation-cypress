@@ -46,42 +46,15 @@ describe('Landing page tests', function(){
         cy.get(login.loginButton).click();
     })
     it('URL of all the left pane actions', function(){
-        cy.get(leftPane.element).contains(leftPane.name.admin).click();
-        cy.url().should('eq', leftPane.url.admin);
-        
-        cy.get(leftPane.element).contains(leftPane.name.pim).click();
-        cy.url().should('eq', leftPane.url.pim);
-
-        cy.get(leftPane.element).contains(leftPane.name.leave).click();
-        cy.url().should('eq', leftPane.url.leave);
-
-        cy.get(leftPane.element).contains(leftPane.name.time).click();
-        cy.url().should('eq', leftPane.url.time);
-
-        cy.get(leftPane.element).contains(leftPane.name.recruitment).click();
-        cy.url().should('eq', leftPane.url.recruitment);
-
-        cy.get(leftPane.element).contains(leftPane.name.info).click();
-        cy.url().should('eq', leftPane.url.info);
-
-        cy.get(leftPane.element).contains(leftPane.name.performance).click();
-        cy.url().should('eq', leftPane.url.performance);
-
-        cy.get(leftPane.element).contains(leftPane.name.dashboard).click();
-        cy.url().should('eq', leftPane.url.dashboard);
-
-        cy.get(leftPane.element).contains(leftPane.name.directory).click();
-        cy.url().should('eq', leftPane.url.directory);
-
-        cy.get(leftPane.element).contains(leftPane.name.maintenance).click();
-        cy.url().should('eq', leftPane.url.maintenance);
-        cy.get(maintenance.cancel).click();
-
-        cy.get(leftPane.element).contains(leftPane.name.claim).click();
-        cy.url().should('eq', leftPane.url.claim);
-
-        cy.get(leftPane.element).contains(leftPane.name.buzz).click();
-        cy.url().should('eq', leftPane.url.buzz);
+        Object.keys(leftPane.name).forEach(key=>{
+            var i = `${leftPane.name[key]}`;
+            var j = `${leftPane.url[key]}`;
+            cy.get(leftPane.element).contains(i).click();
+            cy.url().should('eq', j);
+            if (j == leftPane.url.maintenance){
+                cy.get(maintenance.cancel).click();
+            }
+        })
 
     })
     it('Search functionality in left pane', function(){
