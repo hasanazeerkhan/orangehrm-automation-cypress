@@ -84,7 +84,7 @@ Custom commands are defined in the `cypress/support/commands.js` file. They help
 - All **social handles** work correctly.
 - URL of the **left panel** works correctly.
 
-[Watch the test run](cypress\videos\tests.cy.js.mp4)
+[Watch the test run](cypress/videos/tests.cy.js.mp4)
 
 ## Contributing
 
