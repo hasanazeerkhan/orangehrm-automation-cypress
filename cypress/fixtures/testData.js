@@ -32,6 +32,7 @@ const credentials = {
 
 const leftPane = {
     element:'[class="oxd-text oxd-text--span oxd-main-menu-item--name"]',
+    search:'[placeholder="Search"]',
     name:{
     admin: 'Admin',
     pim:'PIM',
